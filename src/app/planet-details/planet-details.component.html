@@ -1,0 +1,22 @@
+<div *ngIf="planet"  class="card">
+  <h2>{{ planet.name }}</h2>
+  <p><strong>Climate:</strong> {{ planet.climate }}</p>
+  <p><strong>Population:</strong> {{ planet.population }}</p>
+  <p><strong>Terrain:</strong> {{ planet.terrain }}</p>
+
+</div>
+<div class="table" align ="center">
+  <h3>Residents</h3>
+  <div class="table-row">
+    <div class="table-cell">Name</div>
+    <div class="table-cell">Height</div>
+    <div class="table-cell">Mass</div>
+    <div class="table-cell">Gender</div>
+  </div>
+  <div class="table-row" *ngFor="let resident of residents">
+    <div class="table-cell">{{ resident.name }}</div>
+    <div class="table-cell">{{ resident.height }}</div>
+    <div class="table-cell"> {{ resident.mass }}</div>
+    <div class="table-cell"> {{ resident.gender }}</div>
+  </div>
+</div>

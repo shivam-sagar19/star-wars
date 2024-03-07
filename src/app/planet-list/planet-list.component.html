@@ -1,0 +1,15 @@
+<div  class="container">
+  <div *ngFor="let planet of planets" class="card item">
+    <h2>{{ planet.name }}</h2>
+    <p><strong>Climate:</strong> {{ planet.climate }}</p>
+    <p><strong>Population:</strong> {{ planet.population }}</p>
+    <p><strong>Terrain:</strong> {{ planet.terrain }}</p>
+    <button [routerLink]="['/planet', planet.url.split('/')[5]]">View Details</button>
+  </div>
+</div>
+
+<div align="end">
+  <button *ngIf="previousPage" (click)="goToPreviousPage()">Previous Page</button>
+  &nbsp;
+  <button *ngIf="nextPage" (click)="goToNextPage()">Next Page</button>
+</div>

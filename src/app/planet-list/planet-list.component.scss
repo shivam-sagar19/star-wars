@@ -1,0 +1,45 @@
+.card {
+  border: 1px solid #e2dede;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+  grid-gap: 20px; /* Adjust the gap between columns */
+  width: 100%;
+}
+
+/* Example styling for items inside the grid */
+.item {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+ button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Define responsive grid layout for different screen sizes */
+@media screen and (max-width: 650px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr); /* Two columns for screens wider than 768px */
+  }
+}
+
+// @media (min-width: 1200px) {
+//   .container {
+//     grid-template-columns: repeat(3, 1fr); /* Three columns for screens wider than 1200px */
+//   }
+// }

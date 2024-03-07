@@ -1,0 +1,32 @@
+.resident-details {
+  margin-top: 20px;
+}
+
+.resident-details p {
+  margin-bottom: 5px;
+}
+
+.card {
+  border: 1px solid #e2dede;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  // text-align: center;
+}
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
